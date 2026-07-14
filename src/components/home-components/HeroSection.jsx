@@ -93,12 +93,12 @@ export default function Home() {
     <div className="relative w-full overflow-x-hidden bg-white text-[#012D54] font-sans antialiased selection:bg-[#114C5A] selection:text-white">
       {/* Immersive Background Elements */}
       <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-0" />
-      <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-gradient-to-bl from-[rgba(20,76,90,0.04)] to-transparent rounded-bl-full pointer-events-none z-0" />
+      <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-linear-to-bl from-[rgba(20,76,90,0.04)] to-transparent rounded-bl-full pointer-events-none z-0" />
       
       {/* SECTION 1: HERO / VISION ENTRY */}
       <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 xl:px-32 py-20 z-10 overflow-hidden">
         {/* Architectural Grid Line */}
-        <div className="absolute left-6 md:left-16 lg:left-24 xl:left-32 top-0 bottom-0 w-[1px] bg-gradient-to-b from-[#114C5A]/20 via-[#012D54]/10 to-transparent pointer-events-none" />
+        <div className="absolute left-6 md:left-16 lg:left-24 xl:left-32 top-0 bottom-0 w-px bg-linear-to-b from-[#114C5A]/20 via-[#012D54]/10 to-transparent pointer-events-none" />
 
         <div className="max-w-6xl pl-4 md:pl-10 relative">
           {/* Animated Kinetic Typography */}
@@ -108,7 +108,7 @@ export default function Home() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="mb-8 overflow-hidden"
           >
-            <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-r from-[#012D54] via-[#114C5A] to-[#012D54]">
+            <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight leading-none text-transparent bg-clip-text bg-linear-to-r from-[#012D54] via-[#114C5A] to-[#012D54]">
               Building<br />
               Intelligent Applications.<br />
               Driving Digital Innovation.
@@ -122,7 +122,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex items-center gap-4 my-10"
           >
-            <div className="w-12 h-[2px] bg-[#114C5A]" />
+            <div className="w-12 h-0.5 bg-[#114C5A]" />
             <h2 className="text-xl md:text-3xl font-bold tracking-wide uppercase text-[#114C5A]">
               Transforming<br />
               Ideas into Powerful Digital Solutions
@@ -148,8 +148,8 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: CAPABILITIES / DEEP DIVE */}
-      <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 xl:px-32 py-24 z-10 bg-gradient-to-b from-transparent via-[rgba(20,76,90,0.02)] to-transparent">
-        <div className="absolute right-6 md:right-16 lg:right-24 xl:right-32 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-[#114C5A]/10 to-[#012D54]/20 pointer-events-none" />
+      <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-24 xl:px-32 py-24 z-10 bg-linear-to-b from-transparent via-[rgba(20,76,90,0.02)] to-transparent">
+        <div className="absolute right-6 md:right-16 lg:right-24 xl:right-32 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-[#114C5A]/10 to-[#012D54]/20 pointer-events-none" />
         
         <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           
@@ -184,7 +184,7 @@ export default function Home() {
           
           {/* Section Typography Header & Integrated Navigation Block */}
           <div className="mb-16 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6">
-            <h3 className="text-3xl md:text-5xl font-black tracking-tight text-[#012D54] flex-grow">
+            <h3 className="text-3xl md:text-5xl font-black tracking-tight text-[#012D54] grow">
               Our Services
             </h3>
             
@@ -207,7 +207,7 @@ export default function Home() {
                 key={index}
                 whileHover={{ y: -6, scale: 1.01 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className="group relative bg-white border border-[#012D54]/10 p-8 min-h-[70px] flex flex-col justify-between rounded-xl overflow-hidden hover:border-[#114C5A] transition-colors duration-300 shadow-sm"
+                className="group relative bg-white border border-[#012D54]/10 p-8 min-h-17.5 flex flex-col justify-between rounded-xl overflow-hidden hover:border-[#114C5A] transition-colors duration-300 shadow-sm"
               >
                 <h4 className="text-xl font-bold tracking-tight text-[#012D54] group-hover:text-[#114C5A] transition-colors duration-300 mt-4">
                   {service}
